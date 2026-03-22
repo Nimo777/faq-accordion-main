@@ -3,19 +3,16 @@ function toggleAnswer(btn) {
     let parent = btn.parentElement;
 
     let answer = parent.querySelector(".answer");
-    let question = parent.querySelector(".paragraph")
+    let icon = parent.querySelector(".star")
 
     if (answer.style.display === "block") {
         answer.style.display = "none";
-        question.style.display ="block"
-        answer.style.background="white";
+        icon.src="assets/images/icon-plus.svg";
+
+        
     } else {
         answer.style.display = "block";
-        question.style.display ="none"
-        answer.style.background="hsl(292, 16%, 49%)";
-        answer.style.color="white";
-        answer.style.borderRadius = "10px";
-        answer.style.padding ="10px";
+        icon.src="assets/images/icon-minus.svg";
         
     }
 
