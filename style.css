@@ -1,0 +1,137 @@
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans',sans-serif;
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+
+
+}
+.card{
+    z-index: 1;
+    border-radius: 10px;
+    width: 560px;
+    padding: 35px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+
+.head{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+#faqs{
+    font-size: 50px;
+}
+.ask{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.info{
+    margin-bottom: 40px;
+    color: hsl(292, 16%, 49%);
+}
+.questions{
+
+    list-style: none;
+    
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    
+
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background img{
+    width: 100%;
+    display: block;
+}
+#top{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+        padding: 15px 0;
+}
+#middle{
+    border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+}
+.star{
+    transition: 0.3s;
+    display: inline-block;
+}
+.star:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.paragraph{
+    font-weight: 500;
+    color: hsl(292, 42%, 14%);
+}
+.answer {
+    display: none;
+}
+@media(max-width:768px)
+{
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .background{
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: url(assets/images/background-pattern-mobile.svg);
+    }
+    .background img{
+        width: 100%;
+        display: block;
+        
+    }
+    .card{
+        padding: 25px 10px;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 360px;
+
+    }
+    #faqs{
+        font-size: 40px;
+    }
+    
+
+
+
+
+
+
+
+}
